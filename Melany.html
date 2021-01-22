@@ -1,0 +1,70 @@
+<!-- Melany Cardenas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melany Cardenas</title>
+    <!-- BOOTSTRAP -->
+     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet">
+     <!-- ARCHIVOS CSS -->
+     <link href="CSS/style.css" rel="stylesheet"></link>
+     <!-- ARCHIVOS JS --> 
+     <script type="text/javascript" src="JS/jquery.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+     <script type="text/javascript" src="JS/Melany.js"></script>
+</head>
+<body>
+    <div class="container-fluid">   
+            <div class="col-md-3">
+                
+                    <div class="row">
+                        
+                        <label for="">Apellidos <i class="text-danger">*<small class="text-muted" id="msj_apellidos">Minimo 6 caracteres</small></i></label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Ej: Cardenas" class="form-control">
+                    
+                        
+                        <label for="">Nombres <i class="text-danger">* <small class="text-muted" id="msj_nombres">Minimo 6 caracteres</small></i></label>
+                        <input type="text" id="nombres" name="nombres" placeholder="Ej: Melany " class="form-control">
+
+                        <label for="">Telefono <i class="text-danger">* <small class="text-muted" id="msj_telefono">Minimo 6 caracteres</small></i></label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Ej: 099999999" class="form-control">
+
+                        <label for="">Correo <i class="text-danger">* <small class="text-muted" id="msj_correo">Minimo 6 caracteres</small></i></label>
+                        <input type="text" id="correo" name="correo" placeholder="Ej: melanycardenas32@gmail.com" class="form-control">
+
+                        <label for=""><i class="text-danger">* <small class="text-muted" id="msj_ciudad">Campo obligatorio </small></i></label>
+                        
+                        <select id="ciudad" class="form-control">
+                            <option value="">Seleccione Una respuesta</option>
+                            <option value="QUITO">QUITO</option>
+                            <option value="CUENCA">CUENCA</option>
+                            <option value="GUAYAQUIL">GUAYAQUIL</option>
+                            
+                        </select>
+
+                    
+                    <div class="row mt-2">
+                        <div class="col-md-12  ">
+                            <label for=""><i class="text-danger">* <small class="text-muted" id="msj_sexo">Elija una opcion</small></i></label>
+                            <br>
+                            <span>Mujer: <input   type="radio" name="sexo"  value="Mujer"></span>
+                            <span>Hombre: <input    type="radio" name="sexo" value="Hombre"></span>
+                            <span>Otro <input   type="radio" name="sexo"  value="Otro"></span>
+                        </div>
+                    </div>
+                    <span>
+                        Acepto Terminos y Condiciones
+                        <input type="checkbox" id="terminos">
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-info" id="btn_registrar">Registrar</button>
+            </div>
+            </div>
+        </div>
+
+    
+</body>
+</html>
